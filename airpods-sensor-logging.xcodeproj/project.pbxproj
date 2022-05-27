@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23701DE02840C358003E682D /* MotionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23701DDF2840C358003E682D /* MotionWriter.swift */; };
+		23701DE22840C42B003E682D /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23701DE12840C42B003E682D /* MotionManager.swift */; };
 		23B2E0932840C140004E3FF5 /* airpods_sensor_loggingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B2E0922840C140004E3FF5 /* airpods_sensor_loggingApp.swift */; };
 		23B2E0952840C140004E3FF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B2E0942840C140004E3FF5 /* ContentView.swift */; };
 		23B2E0972840C142004E3FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B2E0962840C142004E3FF5 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23701DDF2840C358003E682D /* MotionWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionWriter.swift; sourceTree = "<group>"; };
+		23701DE12840C42B003E682D /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		23B2E08F2840C140004E3FF5 /* airpods-sensor-logging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "airpods-sensor-logging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B2E0922840C140004E3FF5 /* airpods_sensor_loggingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airpods_sensor_loggingApp.swift; sourceTree = "<group>"; };
 		23B2E0942840C140004E3FF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		23B2E0912840C140004E3FF5 /* airpods-sensor-logging */ = {
 			isa = PBXGroup;
 			children = (
+				23701DDF2840C358003E682D /* MotionWriter.swift */,
+				23701DE12840C42B003E682D /* MotionManager.swift */,
 				23B2E0922840C140004E3FF5 /* airpods_sensor_loggingApp.swift */,
 				23B2E0942840C140004E3FF5 /* ContentView.swift */,
 				23B2E0962840C142004E3FF5 /* Assets.xcassets */,
@@ -139,6 +145,8 @@
 			files = (
 				23B2E0952840C140004E3FF5 /* ContentView.swift in Sources */,
 				23B2E0932840C140004E3FF5 /* airpods_sensor_loggingApp.swift in Sources */,
+				23701DE02840C358003E682D /* MotionWriter.swift in Sources */,
+				23701DE22840C42B003E682D /* MotionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +278,7 @@
 				DEVELOPMENT_TEAM = YX6B69FS7M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "AirPodsProのセンサの値を取得します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,7 +289,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.n.rei.airpods-sensor-logging";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zozo.rei.nakaoka.airpods-sensor-logging";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -299,6 +308,7 @@
 				DEVELOPMENT_TEAM = YX6B69FS7M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "AirPodsProのセンサの値を取得します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,7 +319,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.n.rei.airpods-sensor-logging";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zozo.rei.nakaoka.airpods-sensor-logging";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

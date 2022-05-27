@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    let motionManager = MotionManager()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Button(action: {motionManager.startStream()}) {
+            Text("start")
+        }
     }
 }
 
