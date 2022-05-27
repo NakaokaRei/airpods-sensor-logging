@@ -13,6 +13,7 @@
 		23B2E0952840C140004E3FF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B2E0942840C140004E3FF5 /* ContentView.swift */; };
 		23B2E0972840C142004E3FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B2E0962840C142004E3FF5 /* Assets.xcassets */; };
 		23B2E09A2840C142004E3FF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B2E0992840C142004E3FF5 /* Preview Assets.xcassets */; };
+		C74BFE81ABA0A985FDD28310 /* Pods_airpods_sensor_logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE406A269FB764B791191386 /* Pods_airpods_sensor_logging.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,9 @@
 		23B2E0942840C140004E3FF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23B2E0962840C142004E3FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23B2E0992840C142004E3FF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2E09BA280392048EE72D57EB /* Pods-airpods-sensor-logging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airpods-sensor-logging.release.xcconfig"; path = "Target Support Files/Pods-airpods-sensor-logging/Pods-airpods-sensor-logging.release.xcconfig"; sourceTree = "<group>"; };
+		AE406A269FB764B791191386 /* Pods_airpods_sensor_logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_airpods_sensor_logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0732D63FE037FB185FC403 /* Pods-airpods-sensor-logging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airpods-sensor-logging.debug.xcconfig"; path = "Target Support Files/Pods-airpods-sensor-logging/Pods-airpods-sensor-logging.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74BFE81ABA0A985FDD28310 /* Pods_airpods_sensor_logging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +46,8 @@
 			children = (
 				23B2E0912840C140004E3FF5 /* airpods-sensor-logging */,
 				23B2E0902840C140004E3FF5 /* Products */,
+				DE3D490885B6DCE4DAE08E3D /* Pods */,
+				CD1F0794CFC16E57AF6704F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CD1F0794CFC16E57AF6704F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE406A269FB764B791191386 /* Pods_airpods_sensor_logging.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE3D490885B6DCE4DAE08E3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF0732D63FE037FB185FC403 /* Pods-airpods-sensor-logging.debug.xcconfig */,
+				2E09BA280392048EE72D57EB /* Pods-airpods-sensor-logging.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23B2E09D2840C142004E3FF5 /* Build configuration list for PBXNativeTarget "airpods-sensor-logging" */;
 			buildPhases = (
+				7D82B74C7F6916F1F3995F61 /* [CP] Check Pods Manifest.lock */,
 				23B2E08B2840C140004E3FF5 /* Sources */,
 				23B2E08C2840C140004E3FF5 /* Frameworks */,
 				23B2E08D2840C140004E3FF5 /* Resources */,
+				76C1A82E34C8AE427E0CF6D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,6 +164,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76C1A82E34C8AE427E0CF6D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-airpods-sensor-logging/Pods-airpods-sensor-logging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-airpods-sensor-logging/Pods-airpods-sensor-logging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-airpods-sensor-logging/Pods-airpods-sensor-logging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D82B74C7F6916F1F3995F61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-airpods-sensor-logging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23B2E08B2840C140004E3FF5 /* Sources */ = {
@@ -269,6 +338,7 @@
 		};
 		23B2E09E2840C142004E3FF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF0732D63FE037FB185FC403 /* Pods-airpods-sensor-logging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +369,7 @@
 		};
 		23B2E09F2840C142004E3FF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E09BA280392048EE72D57EB /* Pods-airpods-sensor-logging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
