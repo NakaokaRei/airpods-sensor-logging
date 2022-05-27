@@ -13,6 +13,7 @@
 		23B2E0952840C140004E3FF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B2E0942840C140004E3FF5 /* ContentView.swift */; };
 		23B2E0972840C142004E3FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B2E0962840C142004E3FF5 /* Assets.xcassets */; };
 		23B2E09A2840C142004E3FF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B2E0992840C142004E3FF5 /* Preview Assets.xcassets */; };
+		23F6B6482840D03000143AF6 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6B6472840D03000143AF6 /* LineChartView.swift */; };
 		C74BFE81ABA0A985FDD28310 /* Pods_airpods_sensor_logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE406A269FB764B791191386 /* Pods_airpods_sensor_logging.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		23B2E0942840C140004E3FF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23B2E0962840C142004E3FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23B2E0992840C142004E3FF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23F6B6472840D03000143AF6 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		2E09BA280392048EE72D57EB /* Pods-airpods-sensor-logging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airpods-sensor-logging.release.xcconfig"; path = "Target Support Files/Pods-airpods-sensor-logging/Pods-airpods-sensor-logging.release.xcconfig"; sourceTree = "<group>"; };
 		AE406A269FB764B791191386 /* Pods_airpods_sensor_logging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_airpods_sensor_logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0732D63FE037FB185FC403 /* Pods-airpods-sensor-logging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airpods-sensor-logging.debug.xcconfig"; path = "Target Support Files/Pods-airpods-sensor-logging/Pods-airpods-sensor-logging.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,10 +64,10 @@
 		23B2E0912840C140004E3FF5 /* airpods-sensor-logging */ = {
 			isa = PBXGroup;
 			children = (
+				23F6B6492840D08D00143AF6 /* View */,
 				23701DDF2840C358003E682D /* MotionWriter.swift */,
 				23701DE12840C42B003E682D /* MotionManager.swift */,
 				23B2E0922840C140004E3FF5 /* airpods_sensor_loggingApp.swift */,
-				23B2E0942840C140004E3FF5 /* ContentView.swift */,
 				23B2E0962840C142004E3FF5 /* Assets.xcassets */,
 				23B2E0982840C142004E3FF5 /* Preview Content */,
 			);
@@ -78,6 +80,15 @@
 				23B2E0992840C142004E3FF5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23F6B6492840D08D00143AF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23B2E0942840C140004E3FF5 /* ContentView.swift */,
+				23F6B6472840D03000143AF6 /* LineChartView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CD1F0794CFC16E57AF6704F6 /* Frameworks */ = {
@@ -94,7 +105,6 @@
 				FF0732D63FE037FB185FC403 /* Pods-airpods-sensor-logging.debug.xcconfig */,
 				2E09BA280392048EE72D57EB /* Pods-airpods-sensor-logging.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23B2E0952840C140004E3FF5 /* ContentView.swift in Sources */,
+				23F6B6482840D03000143AF6 /* LineChartView.swift in Sources */,
 				23B2E0932840C140004E3FF5 /* airpods_sensor_loggingApp.swift in Sources */,
 				23701DE02840C358003E682D /* MotionWriter.swift in Sources */,
 				23701DE22840C42B003E682D /* MotionManager.swift in Sources */,
